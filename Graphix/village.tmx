@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="18" height="18" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="b" tilewidth="32" tileheight="32">
+  <image source="celianna/b.png" trans="ffffff" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="193" name="c" tilewidth="32" tileheight="32">
+  <image source="celianna/c.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="449" name="farmbuild" tilewidth="32" tileheight="32">
+  <image source="celianna/farmbuild.png" trans="ffffff" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="849" name="r" tilewidth="32" tileheight="32">
+  <image source="celianna/r.png" trans="ffffff" width="544" height="856"/>
+ </tileset>
+ <tileset firstgid="1291" name="tilebs" tilewidth="32" tileheight="32">
+  <image source="celianna/tilebs.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="18" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC3vIyMDwCIifA/EzKC3EQDr+CtT3DYh/A/EvKE2OOaN4FI/iUTxQGABrPYQAEAUAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="18" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC82TsU4CQRCG53bvKqWgVgpMrJSSSk3slScAE2rfw0KpxFiggjRqBIFXuBcAwwNgUN5BWr9wB8ei4N3ZOMmXzO7M/9/OXlZkdVS0yA3cwh1UoaaX918qkTJcKXO/gaYJL9CCNnSgS1/P53VO80D+CE8LPqe2ub62RM7gnb4Pn9GC5pl6IyRN+FQeY2XOQ734y3UF81oynC3sP/nUp3nSNu8lrs+W/a0Wy+eH2r/xSejoPmuOyDoknGA/HcNnA/0mpOZ8sjF8dtDvQgYu+N8lNatF8tlDvw8HMNCeT1JP3sUhdTcMvIv6EfpjyDkTD5czudv49C3vW13ohThTHn0BTuBcBbNN8wE9b2EH9KOKrgb3ysyjxhdR1mZaEAUAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="18" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC3vIyMDwCIhPAfFpICYGPAWqe8aIoJ8D8VkgPgfE94D4PhZz1FgxxX4C1f1iRNAiQDUPoe75BMSfiXQPOlABmvMVqPcbFnPCiDBThRFBszAxMLACMRsQszOR5x4QkADqlQRiKSCWJsOcJVA3XWVhYLgGxNdZyHcLCDwD6n8OxC8oMMccS5ySCkKh/nIH0h5kxjctASn5gh6giII0CAKdUP1HSdTHDYxrHiDmBWI+ILYGmmMDxBehYXMJSF9GCidcaUMaKC4DxLJALAfEd5kh4iAauTxJBqbLFCBOxZE+tYF6dYBYF4j10OyClSe/gbgEqL8UiMtwmGMN1GsDxLZAbAfEADT7TX4QBQAA
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="18" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgYGAwY2JgMAdiGOBnZmAQAGJBZgaSgBfQDG+oOYeBepWBWAWIVUk0BxlcAeo1B2ILILYkwZxXQLWvkdQ/BbK9gdgHiH1JMOc3UO0fCtwPA3eZUelRQBtwiBGMGw4CMSXmXGME44arFJrzihGMG15SaM4/RjBu+EuhOaD0J8TE0CDIRJk5pABnIDYBYhc8an4yEjYnGGpOCIn2L2AhXi0ABKUSuhAFAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="24" height="24" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Inq XP MT - Mud" tilewidth="32" tileheight="32">
+  <image source="../../../Graphics/simlesprites/exterior/Inq XP MT - Mud.png" trans="74acff" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="13" name="Inq XP MT - Road" tilewidth="32" tileheight="32">
+  <image source="../../../Graphics/simlesprites/exterior/Inq XP MT - Road.png" trans="74acff" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="25" name="Inq XP Doors2" tilewidth="32" tileheight="32">
+  <image source="../../../Graphics/simlesprites/exterior/Inq XP Doors2.png" trans="74acff" width="128" height="256"/>
+ </tileset>
+ <tileset firstgid="57" name="castle" tilewidth="32" tileheight="32">
+  <image source="../../../Graphics/simlesprites/exterior/castle.png" trans="ffffff" width="256" height="2234"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="24" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0T0OgkAQhuFhb6AhcP9LqJWKJGqFVGqlVkClHsG3IdkGZDcMNFs83cz37Y8RERMEWGGNjVL+FjvslfKPOOGslF/gglIp/4ob7g47scPsA0+8HPPjgT0VajSO906sjmXP3BsffD3e1u7o6skikQPyyP8Ph/SMYY6eKTo08tuOhWK+UT5/yP8v9dj5AXfzHPo=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="24" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjALKgSQQKwKxJo3MlwViVSDWpZH5BxkZGA4B8WFGGlkwCkbBKBhUAAC3WQMc
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="24" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztkjsKgEAMRJMFtVIr9Szaaaeddtrp/a/gZ/osywopRPJgmGLIq0JkGDq0TNSxbC16uAaWrcUI18SytZjhWli2FitcG8vWYofrYNmG8UVO/OaF3J4fDW2xJI4oRTL3boslx22BlB5HaIulwm2NNB5HaPsTD8DLEiU=
+  </data>
+ </layer>
+</map>

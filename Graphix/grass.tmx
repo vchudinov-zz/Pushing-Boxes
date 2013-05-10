@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="24" height="24" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="d" tilewidth="32" tileheight="32">
+  <image source="celianna/d.png" trans="ffffff" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="129" name="celiannatilea1" tilewidth="32" tileheight="32">
+  <image source="celianna/celiannatilea1.png" trans="ffffff" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="321" name="celiannatilea2" tilewidth="32" tileheight="32">
+  <image source="celianna/celiannatilea2.png" trans="ffffff" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="513" name="nature" tilewidth="32" tileheight="32">
+  <image source="celianna/nature.png" trans="ffffff" width="801" height="523"/>
+ </tileset>
+ <tileset firstgid="913" name="tilebs" tilewidth="32" tileheight="32">
+  <image source="celianna/tilebs.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1169" name="trees" tilewidth="32" tileheight="32">
+  <image source="celianna/trees.png" trans="ffffff" width="848" height="559"/>
+ </tileset>
+ <layer name="Tile Layer 5" width="24" height="24">
+  <properties>
+   <property name="blocked" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYCAONLLgxtQAuMyhxHxi3EmJP0jRM9jMJ9XP5JhPb/WE4plW7iEn/YyqJ149ofAlNvzJLbeIVUus2ehqBnPYDzX1pMYBrctBcvUMFvOpWcdjM5dWbifWXAB8Mid9
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="24" height="24">
+  <data encoding="base64" compression="zlib">
+   eJz7x8TA8B+I/43So/QoPUqP0qP0KD1KDxJagpmBQZwGGGYuAPSbK6U=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="24" height="24">
+  <data encoding="base64" compression="zlib">
+   eJytlTdOA1EURZ/kUAMNsAWgAbYA9CZ25FCTQzXkGtusAocaehNWYcCwAygJ54uxeBr9P/4DvtKRnHSsd9/MHxGR2YzIHMyDyUVaJA8FKMJlWryynJZgCRZhAZqf7+Hdh4PQf4WvBGWoQNXTv4VzEzZgXfnzeAuQwzMOEzAJd3APD57+E5zHcASHyl/CXQZmEmYTZjSzyhM8Q8PD79MpMwmzCTOaWVvmLSXynvp57dMpMwmzCTOaWROlxu9vYzqthe+jO/BNnd8+xnRaD99Hd6Cj+7DFtoMZ9jwNU+G+k+5A/69tB2t4V2El9Ld7B7t4d2A79NN5QPcBOwhy6hp2pYPruhO6MvYdnOM4g1MwXbnucVf68PbDQMb+ve7fdGW7x6/p9sax1xG8ozDm8Ov+TVeue9wVfTY24AVe1X/p/n271/Pos/EDPuFL+XX/Sbs3aZ6NRejOivRAb/b3e31Nuc7XuDTPxgoM4h2CYeXX11TS7n3zl+dV9KyIcyR9XtlccY5WZ2s0Nleco9XZGo3NldQRl3a6/ptv0ijL7A==
+  </data>
+ </layer>
+ <layer name="zz" width="24" height="24">
+  <data encoding="base64" compression="zlib">
+   eJy9lU1OAkEUhGsxcAXlGMhJxEHWKuja/y2CPzdQj6EeAzyG4zHQr8Pm5WUm9vQ4VPIlJJMU3f2qq/NMswMYwj7onzXB8wSO4agF/ys8L+ECzo3/KJMOYZw187/HcwFzuDP+U3xP4SzBP2Zt13y7gdsIf+/n11b2fw/8foSnCH/v59fW5CzK/Pza6pxFmf7aa52zqNIr2XiB5xYyHvSB7zu8teT/ie8KluD3Qi+IfhA9oTzxjL7xKuAL/F7oBdEPoidCXyTJZtzuJXyjF0Q/iJ4IfZEkm3G7l/CNXhD9IHoi9EUtFR18oCrjtpuZh5hLyFq0fvBeQ1XGbTczDzGXkLVo9bqa7cJOtzyXtpuZh1ab+URrgO8e9I2/zaftZuahYjOfRrL5zN37mDIDf59sPv37mDIDf59sPv37mDIDf5+s/PuYMgN/n7apX/tJowU=
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="24" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztk0kOwjAMRb/UXpDhAgwXYFiwZOiGU8JReBEgqihpcBqgC570F7ETp65/pG6WtfYLNEcz1M6xFnGRd/uy2FJzg9Zo5dVnLeIi7/YFmXBmjEbe2ScN8RM6ooO3h7WIi7wulXStXrnz475Y76WI9V6KWO9/vs+uvssCvhb+dj7XNHHWWttR4g138c4b7kP7DTcfqO9jmUcOqXn0vT81D4sfQt+SmofFDznetPhhqN78tcf6MtT/GuIGCkpCCw==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="12" height="12" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="b" tilewidth="32" tileheight="32">
+  <image source="celianna/b.png" trans="ffffff" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="193" name="c" tilewidth="32" tileheight="32">
+  <properties>
+   <property name="blocked" value="true"/>
+  </properties>
+  <image source="celianna/c.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <layer name="background" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYmBgYBrFo5hMDABIjwEh
+  </data>
+ </layer>
+ <layer name="object" width="12" height="12">
+  <properties>
+   <property name="blocked" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYoAAe0YGOBBBYqchsUGACU09PrXo6gmphamDYUJqYeYTYy4MoKtlYkBgXOYzIZmLSx0yIOQGctUORgAA1FAFnQ==
+  </data>
+ </layer>
+ <layer name="collision" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B8AAACQAAB
+  </data>
+ </layer>
+</map>

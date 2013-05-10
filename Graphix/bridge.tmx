@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="18" height="18" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="c" tilewidth="32" tileheight="32">
+  <image source="celianna/c.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="257" name="celiannatilea5" tilewidth="32" tileheight="32">
+  <image source="celianna/celiannatilea5.png" trans="ffffff" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="385" name="water" tilewidth="32" tileheight="32">
+  <image source="celianna/water.png" trans="ffffff" width="384" height="192"/>
+ </tileset>
+ <tileset firstgid="457" name="celiannatilec" tilewidth="32" tileheight="32">
+  <image source="celianna/celiannatilec.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="713" name="tilebs" tilewidth="32" tileheight="32">
+  <image source="celianna/tilebs.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="969" name="b" tilewidth="32" tileheight="32">
+  <image source="celianna/b.png" trans="ffffff" width="512" height="384"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="18" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+NkZGDgHMWjeBSP4lHMAAD+dW/DEAUAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="18" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgwA1+MTAkAPECXPIXmVBpdPATYgbDTWYI/gXl/0ZT95AJlUY3A6YfGwaZxc6MqW8WIwTPphCvohLeRiW8HYhXE8CrsPDRxbYTgbdh4aOLodtBjt+3E6kWl7twuXGg44rY+CIGExNfxOBDVMJYygqFU8B8iA/jK0vIMQdbvqfUPQAeRZ59EAUAAA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="18" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC5vDxMAwF4jRQSCmEF6wBmjGWqg567CYRyzYC9S7D6p/JpCeRSSejcfOlUC5VUTi1aPmjJozQszZCZTbRSTejcec4QQAmwDnGxAFAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="18" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgwA12MjMw7ALi3UC8B4hXAvEqIF4NxGuAeCYQzwLi2cx4DCHRXEoAsrmUgAMU6h8Fo2Cwgk5g2u4C4m4g7iExnW9EUo+c9+eQaI4OUL0uVA96mUIuQC9TyAUAEXVckxAFAAA=
+  </data>
+ </layer>
+</map>

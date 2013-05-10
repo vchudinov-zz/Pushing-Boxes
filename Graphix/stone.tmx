@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="12" height="12" tilewidth="40" tileheight="40">
+ <tileset firstgid="1" name="GRS2ROC" tilewidth="40" tileheight="40">
+  <image source="../../../Graphics/Lost garden/GRS2ROC.bmp" trans="74acff" width="640" height="480"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="12" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxTYmBgUCESqwGxExC7EIndRtUPOfVJQJxCJE4DYgA8+CZB
+  </data>
+ </layer>
+</map>
