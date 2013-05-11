@@ -6,19 +6,24 @@ package PushingBoxes;
 
 import java.util.List;
 
+/**
+ *
+ * @author Atari
+ */
 public class Forest implements Location 
-{   public static String forest = "Graphix/forest.tmx";
+{
+    /**
+     *
+     */
+    public static String forest = "Graphix/forest.tmx";
+    /**
+     *
+     */
     public static int numberOfBoxes = 4;
-    public static int id = 1;
-
+    
     @Override
     public String getLocation()
     {   return forest;
-    }
-
-    @Override
-    public int getID()
-    {   return id;
     }
 
     @Override

@@ -7,21 +7,24 @@ package PushingBoxes;
 
 import java.util.List;
 
+/**
+ *
+ * @author Atari
+ */
 public class Bridge implements Location 
-{   public static String bridge ="Graphix/bridge.tmx"; //this is the address of the map
+{
+    /**
+     *
+     */
+    public static String bridge ="Graphix/bridge.tmx"; //this is the address of the map
+    /**
+     *
+     */
     public static int numberOfBoxes = 5;
-    public static int id = 4;    
     
-    
-
     @Override
     public String getLocation() {
         return bridge;
-    }
-
-    @Override
-    public int getID() 
-    {   return id;
     }
 
     @Override

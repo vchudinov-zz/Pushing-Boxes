@@ -15,8 +15,13 @@ import PushingBoxes.Localizable.Direction;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
+/**
+ *
+ * @author Atari
+ */
 public class Model 
-{   Player player;  //Our player
+{   boolean game = false;
+    Player player;  //Our player
     BoxFactory factory = new BoxFactory();  //The factory that creates all the boxes
     
     int size, lgutter,rgutter,tgutter,bgutter, pxToMove, counter; //gutters, size of tiles, 'step' size and number of boxes
@@ -72,15 +77,14 @@ public class Model
      * 
      * @param i 
      * @param boxes 
-     * @version 4 
+     * @version 5 
      */
     public void move(Input i, PushBox[] boxes) 
     {   if (i.isKeyDown(Input.KEY_UP))
          {   player.move(Direction.up, tgutter, pxToMove);
              for (int box = 0; box < boxes.length; box++)
              {   if ( moveable[box])
-                 {   boxes[box].move(Direction.up, player, pxToMove, tgutter + size/2 , size);
-//                     door.check(boxes[box], drawable, moveable,box,counter,player); 
+                 {   boxes[box].move(Direction.up, this);
                  }
              }
          }
@@ -90,8 +94,7 @@ public class Model
                 
              for (int box = 0; box < boxes.length; box++) 
              {   if (moveable[box])
-                 {   boxes[box].move(Direction.down, player, pxToMove, bgutter + size, size);
-//                     door.check(boxes[box], drawable, moveable,box,counter,player);
+                 {   boxes[box].move(Direction.down, this);
                  }
              }
          }
@@ -101,8 +104,8 @@ public class Model
                 
              for (int box = 0; box < boxes.length; box++)
              {   if (moveable[box])
-                 {   boxes[box].move(Direction.left, player, pxToMove, lgutter, size);
-//                     door.check(boxes[box], drawable, moveable,box,counter,player);
+                 {   boxes[box].move(Direction.left, this);
+
                  }
              }
          }
@@ -112,8 +115,8 @@ public class Model
        
              for (int box = 0; box < boxes.length; box++)
              {   if (moveable[box]) 
-                 {   boxes[box].move(Direction.right, player, pxToMove, rgutter + size, size);
-//                     door.check(boxes[box], drawable, moveable,box,counter,player);
+                 {   boxes[box].move(Direction.right, this);
+
                  }
              }
          }

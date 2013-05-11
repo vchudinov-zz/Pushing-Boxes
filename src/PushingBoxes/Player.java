@@ -1,24 +1,22 @@
-/** This is the class that is responsible for characters. 
- * It contains methods on their movement and energy.
- * Re-added the text-based move method to make the Model class lighter
- * @version x.4.
- * @see Model
- * @author Victor and Nour
- **/
+
 package PushingBoxes;
 
 import PushingBoxes.Localizable.Direction;
 
-/**
- *
- * @author Atari
- */
+/** This is the class that is responsible for characters. 
+ * It contains methods on their movement and energy.
+ * Re-added the text-based move method to make the Model class lighter
+ * @version 4
+ * @see Model
+ * @see PushBox
+ * @author Victor and Nour
+ **/
 public class Player
 {
     /**Initial energy of the player.
     */
     public int energy = 1000;
-    /** Number of lives
+    /** Number of lives.
      */
     public int lives = 3; 
     
@@ -33,9 +31,10 @@ public class Player
     /** Checks if the energy of a character is positive. 
      * Increased energy to 1000. So that it doesn't fall so quickly
      * If it is not - the player loses a live. If lives drop to zero: Game over
+     * @param game 
      * @version 0.2.
      */
-    public void energyLevel()
+    public void energyLevel(boolean game)
     {   energy = energy - 5;
     
         if (energy <=0)
@@ -48,7 +47,7 @@ public class Player
         
         if(lives == 0)
         {   System.out.println("Game over");
-            System.exit(1);
+            game = false;
         }
     }
     
@@ -91,5 +90,6 @@ public class Player
           }
         }
     }
-}
+
+ }
 

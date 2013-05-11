@@ -2,10 +2,8 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package biggameproject;
+package PushingBoxes;
 
-import PushingBoxes.Castle;
-import PushingBoxes.Location.Direction;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -13,15 +11,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.newdawn.slick.tiled.TiledMap;
 
 /**
  *
  * @author Atari
  */
-public class CastleTest {
+public class BridgeTest {
     
-    public CastleTest() {
+    public BridgeTest() {
     }
     
     @BeforeClass
@@ -41,57 +38,56 @@ public class CastleTest {
     }
 
     /**
-     * Test of getExits method, of class Castle.
+     * Test of getLocation method, of class Bridge.
      */
     @Test
-    public void testGetExits() {
-        System.out.println("getExits");
-        Direction direction = null;
-        Castle instance = new Castle();
-        List expResult = null;
-        List result = instance.getExits(direction);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getDescription method, of class Castle.
-     */
-    @Test
-    public void testGetDescription() {
-        System.out.println("getDescription");
-        Castle instance = new Castle();
+    public void testGetLocation() {
+        System.out.println("getLocation");
+        Bridge instance = new Bridge();
         String expResult = "";
-        String result = instance.getDescription();
+        String result = instance.getLocation();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getLocations method, of class Castle.
+     * Test of getID method, of class Bridge.
      */
     @Test
-    public void testGetLocations() {
-        System.out.println("getLocations");
-        Castle instance = new Castle();
+    public void testGetID() {
+        System.out.println("getID");
+        Bridge instance = new Bridge();
+        int expResult = 0;
+        int result = instance.getID();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getBoxes method, of class Bridge.
+     */
+    @Test
+    public void testGetBoxes() {
+        System.out.println("getBoxes");
+        Bridge instance = new Bridge();
+        int expResult = 0;
+        int result = instance.getBoxes();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getobjects method, of class Bridge.
+     */
+    @Test
+    public void testGetobjects() {
+        System.out.println("getobjects");
+        Bridge instance = new Bridge();
         List expResult = null;
-        List result = instance.getLocations();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of loadmap method, of class Castle.
-     */
-    @Test
-    public void testLoadmap() {
-        System.out.println("loadmap");
-        Castle instance = new Castle();
-        TiledMap expResult = null;
-        TiledMap result = instance.loadmap();
+        List result = instance.getobjects();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");

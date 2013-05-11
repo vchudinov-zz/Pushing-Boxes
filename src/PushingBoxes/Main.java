@@ -2,7 +2,7 @@
  * This is the main class - start here.
  * 
  * @author Viktor and Nour
- * @version x.4
+ * @version 4
  * 
  * The concept of our game is for the player to push boxes in a hole and then 
  * move to next level where they'll do the same. It is a sort of puzzle. The player should be 
@@ -13,12 +13,6 @@
  * Tweaked most things to make code better. Improved the Localizable interface. Removed the world interface
  * AddLocations should be renamed to something like levels
  * added new methods in Locations
- * 
- *  
- *  - If we have time - Start menu, Game Over screen, Credits Screen. 
- *  
- *   
- * This class initiates the game. 
  * 
  * Note from Viktor: If you cannot run the game because of a 
  * library error right click on the project -> Add Library. 
@@ -44,8 +38,18 @@ package PushingBoxes;
 import org.newdawn.slick.SlickException;
 
 
+/**
+ *
+ * @author Atari
+ */
 public class Main 
-{   public static void main(String[] args) throws SlickException
+{
+    /**
+     *
+     * @param args
+     * @throws SlickException
+     */
+    public static void main(String[] args) throws SlickException
     {   Controller game = new Controller();
         game.game();
     }

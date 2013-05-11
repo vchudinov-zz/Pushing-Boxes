@@ -10,6 +10,10 @@ import java.util.logging.Logger;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.SlickException;
 
+/**
+ *
+ * @author Atari
+ */
 public class VisualInitializer 
 {   private static AppGameContainer gameFrame;
     

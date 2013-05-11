@@ -4,8 +4,19 @@
  */
 package PushingBoxes;
 
+/**
+ *
+ * @author Atari
+ */
 public class Trapdoor {
-    public int x,y; //position of the door
+    /**
+     *
+     */
+    public int x,
+    /**
+     *
+     */
+    y; //position of the door
     
     /** Class constructor.
      * Sets the door on the field
@@ -30,7 +41,7 @@ public class Trapdoor {
      */
     public void check(Model model)
     {   for (int i = 0; i < model.boxes.length; i++) 
-        {   if (model.boxes[i].xpos <= 264 && model.boxes[i].xpos >= 232 && model.boxes[i].ypos  <= 232 && model.boxes[i].ypos >= 200 )
+        {   if (model.boxes[i].xpos <= Controller.fieldSize/2 && model.boxes[i].xpos >= Controller.fieldSize/2 && model.boxes[i].ypos  <= Controller.fieldSize/2 && model.boxes[i].ypos >= Controller.fieldSize/2 - 32 )
             {   model.drawable[i] = false;
                 model.moveable[i] = false;
             }

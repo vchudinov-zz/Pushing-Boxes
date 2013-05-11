@@ -1,3 +1,9 @@
+
+package PushingBoxes;
+
+import java.util.Random;
+import org.newdawn.slick.SlickException;
+
 /** Factory class for PushBox objects.
  * Creates new boxes. Currently it places the boxes at random coordinates. 
  * In a final version of the game the boxes will have a set number of 
@@ -7,17 +13,16 @@
  * 
  * @author Viktor and Nour
  */
-package PushingBoxes;
-
-import java.util.Random;
-import org.newdawn.slick.SlickException;
-
 public class BoxFactory {
+    /**
+     *
+     */
     public static PushBox[] boxes;  //An array containing all the boxes
     static Random random = new Random();    //Random generator for the coordinates
     
     /** Populates the array boxes with the specified number of boxes.
      * @return - Returns the populated array of PushBoxes
+     * @throws SlickException 
      * @param numberOfBoxes - the number of PushBoxes to be created
      * @version 2
      */
