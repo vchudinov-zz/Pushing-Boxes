@@ -14,20 +14,17 @@ public class Castle implements Location
     static int numberOfBoxes = 6;
         
     @Override
-    public String getLocation() {
-        return castle;
+    public String getLocation()
+    {   return castle;
     }
 
     @Override
-    public int getBoxes() {
-        return numberOfBoxes;
+    public int getBoxes() 
+    {   return numberOfBoxes;
     }
 
     @Override
-    public List<GameObject> getobjects() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public List<GameObject> getobjects() 
+    {   throw new UnsupportedOperationException("Not supported yet.");
     }
-
-    
-
 }

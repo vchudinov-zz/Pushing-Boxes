@@ -2,7 +2,6 @@ package PushingBoxes;
 
 import org.newdawn.slick.SlickException;
 
-
 /** Pushing Boxes - The game where you...push boxes.
  * The goal of the game is to get all the boxes in the trapdoor.
  * Moving heavy boxes is not that easy, though, and when the player does it he loses energy.

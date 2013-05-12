@@ -18,7 +18,7 @@ public class Menu
     * 
     * @version 2
     */
-    boolean checkmMenu(Input input, boolean game)
+    protected boolean checkmMenu(Input input, boolean game)
     {   if (input.isKeyPressed(Input.KEY_ENTER)) //Starts the game
         { game = true;
         }

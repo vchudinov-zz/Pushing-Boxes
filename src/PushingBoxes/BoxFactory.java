@@ -7,7 +7,7 @@ import org.newdawn.slick.SlickException;
 /** Factory class for PushBox objects.
  * Creates new PushBoxes at random coordinates within the game field. 
  * In a final version of the game the boxes will have a set number of 
- * coordinates in order to prompt the player to carefuly preserve their energy
+ * coordinates in order to prompt the player to carefully preserve their energy
  *  
  * @see PushBox
  * @version 3
@@ -26,7 +26,7 @@ public class BoxFactory
      * 
      * @version 2
      */
-    static PushBox[] generator(int numberOfBoxes) throws SlickException
+    protected static PushBox[] generator(int numberOfBoxes) throws SlickException
     {   boxes = new PushBox[numberOfBoxes];                                     //Initialize the array.
         for (int counterOfBoxes = 0; counterOfBoxes < numberOfBoxes; counterOfBoxes++)  //Populate it.
         {   boxes[counterOfBoxes] = new PushBox(random.nextInt(10)*32+96, random.nextInt(10)*32+96);
@@ -48,7 +48,7 @@ public class BoxFactory
      *  
      * @version 3
      */
-    static boolean[] boxSettings(boolean[] settings, int length)
+    protected static boolean[] boxSettings(boolean[] settings, int length)
     {   settings = new boolean[length];           //Initialize the boolean
         for (int i = 0; i < settings.length; i++) //Populate the boolean.
         {   settings[i] = true;

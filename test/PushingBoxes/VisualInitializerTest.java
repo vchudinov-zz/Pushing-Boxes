@@ -1,35 +1,28 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package PushingBoxes;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.junit.Ignore;
+import org.junit.Test;
 
-/**
- *
- * @author Atari
+/**We could not test the methods of Controller, Visuals and VisualInitializer with a JUnit test,
+ * since it does not work with the Slick2d library. 
+ * Or at least we could not make it work or find information how to do it. 
+ * Luckily, these tests are only for graphics, and the logic is tested just fine.
+ * @author Viktor and Nour
  */
-public class VisualInitializerTest {
-    
-    public VisualInitializerTest() {}
+public class VisualInitializerTest 
+{   public VisualInitializerTest() {}
     
     /** Test of newFrame method, of class VisualInitializer.
-     * 
+     * This method basically creates a new frame and since
+     * it has to do with Slick2D JUnit does not like it.
+     * We can run it by hand and it works.
      */
     @Test
     @Ignore
-    public void testNewFrame() {
-        System.out.println("newFrame");
+    public void testNewFrame()
+    {   System.out.println("newFrame");
         int width = 20;
         int height = 30;
         VisualInitializer.newFrame(width, height);
-        
-    }
+     }
 }

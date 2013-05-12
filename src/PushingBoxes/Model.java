@@ -38,12 +38,11 @@ public class Model
      * 
      * @version 2
      */
-    void setBoxes(int nOfBoxes) throws SlickException
+    protected void setBoxes(int nOfBoxes) throws SlickException
     {   this.numberOfBoxes = nOfBoxes;
         boxes = BoxFactory.generator(nOfBoxes); //Generates the array of boxes
         drawable = BoxFactory.boxSettings(drawable,nOfBoxes);   //makes them drawable
         moveable = BoxFactory.boxSettings(moveable,nOfBoxes);   //and movable
-        
     }
     
     /** Initializes the logical game board.
@@ -61,7 +60,7 @@ public class Model
      * @see Controller
      * @version 3
      */
-    void start(int lgutter, int rgutter, int bgutter,int tgutter, int pxToMove)
+    protected void start(int lgutter, int rgutter, int bgutter,int tgutter, int pxToMove)
     {   player = new Player();          //Initialize the player
         size = Controller.size;         //set the tile size to be the same. In theory this could be removed.
         door = new Trapdoor(Controller.fieldSize/2, Controller.fieldSize/2);    //sets the trapdoor
@@ -82,9 +81,11 @@ public class Model
      * @param boxes  - the array of boxes
      * @version 5 
      */
-    void move(Input i, PushBox[] boxes) 
-    {   if (i.isKeyDown(Input.KEY_UP))
+     protected void move(Input i, PushBox[] boxes) 
+     {   if (i.isKeyDown(Input.KEY_UP))
          {   player.move(Direction.up, tgutter, pxToMove);
+             
+             //Iterate trough the boxes and check ig they can be moved. If yes - move.
              for (int box = 0; box < boxes.length; box++)
              {   if ( moveable[box])
                  {   boxes[box].move(Direction.up, this);
@@ -108,7 +109,6 @@ public class Model
              for (int box = 0; box < boxes.length; box++)
              {   if (moveable[box])
                  {   boxes[box].move(Direction.left, this);
-
                  }
              }
          }
@@ -119,7 +119,6 @@ public class Model
              for (int box = 0; box < boxes.length; box++)
              {   if (moveable[box]) 
                  {   boxes[box].move(Direction.right, this);
-
                  }
              }
          }

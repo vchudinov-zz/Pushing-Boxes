@@ -16,15 +16,14 @@ import org.newdawn.slick.tiled.TiledMap;
  * @author Viktor and Nour
  */
 public class Visuals 
-{   static Image box,                      //The image of the PushBoxes
+{   static Image box,                //The image of the PushBoxes
            trapdoor,                 //The image of the door
            menu,                     //The main menu
            gameOver;                 //The Game Over menu
-    static SpriteSheet animation;   //The spreadsheet with the sprites for animating the character 
-    Animation character,            //The animations of the character and the directions he moves
+    static SpriteSheet animation;    //The spreadsheet with the sprites for animating the character 
+    Animation character,             //The animations of the character and the directions he moves
               up,down,left,right; 
     static TiledMap map;
-    
     
     /**Draws the menu, character and the game objects.
      * Initially it displays the Main menu. 
@@ -35,7 +34,7 @@ public class Visuals
      * @throws SlickException 
      * @version 5
      */
-    void graphics(Model model, Graphics gc) throws SlickException
+    protected void graphics(Model model, Graphics gc) throws SlickException
     {   boolean started = true;     //Checks if a game has been started. 
         if (started == model.game)  //If yes - changes the image from menu to Game Over screen.
         {   menu = gameOver;            
@@ -86,7 +85,7 @@ public class Visuals
      * @param i - input from the keyboard
      * @version 3
      * */
-   void moveAnim(Input i) 
+   protected void moveAnim(Input i) 
     {   if (i.isKeyDown(Input.KEY_UP)) 
         {   character = up;
             character.update(3);        //the speed of animation
@@ -112,11 +111,10 @@ public class Visuals
      * @param map - the level map.
      * @throws SlickException 
      * @see Animation
-     
      * 
      * @version 4
      */
-    void start() throws SlickException
+    protected void start() throws SlickException
     {     menu = new Image("Graphix/menu.jpg");                //Initialize the menu.
           gameOver = new Image("Graphix/gameOver.jpg");        //And the Game Over Screen.
           box = new Image("Graphix/box.jpg");                  //The image of the box.

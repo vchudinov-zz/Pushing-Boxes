@@ -12,6 +12,7 @@ public class BridgeTest
     {}
     
      /** Test of getLocation method, of class Bridge.
+      * Tests if the method returns the map address correctly.
      */
     @Test
     public void testGetLocation() 
@@ -24,6 +25,7 @@ public class BridgeTest
     }
 
     /**Test of getBoxes method, of class Bridge.
+     * Tests if the method returns the number of boxes for the level.
      */
     @Test
     public void testGetBoxes()
@@ -35,7 +37,7 @@ public class BridgeTest
      }
 
     /**Test of getobjects method, of class Bridge.
-     * It fails because of an unimplemented method. Otherwise everything is OK.
+     * This is an unimplemented method. This is why it is ignored.
      */
     @Test
     @Ignore

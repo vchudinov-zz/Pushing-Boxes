@@ -49,7 +49,7 @@ public class Controller extends BasicGame
      * 
      * @version 1
      */
-    public void game() throws SlickException
+    protected void game() throws SlickException
     {   VisualInitializer.newFrame(fieldSize, fieldSize);
     }
     
@@ -85,8 +85,8 @@ public class Controller extends BasicGame
      * This is done by checking a boolean variable game located in the model class. 
      * If it is false - you're in the menu state
      * 
-     * @param gc 
-     * @param i 
+     * @param gc - the Game container
+     * @param i - the time it takes between updates in milliseconds.
      * @throws SlickException 
      * @see Model
      * @see Visuals

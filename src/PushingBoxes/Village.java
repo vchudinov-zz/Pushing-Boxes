@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class Village implements Location 
 {   static String village = "Graphix/village.tmx";   //The address to the map.
-    static int numberOfBoxes = 2;                    //THe number of boxes for the level.
+    static int numberOfBoxes = 2;                    //The number of boxes for the level.
         
     @Override
     public String getLocation()
@@ -25,7 +25,4 @@ public class Village implements Location
     public List<GameObject> getobjects() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-
-    
-       
 }

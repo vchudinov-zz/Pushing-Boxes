@@ -5,51 +5,45 @@
 package PushingBoxes;
 
 import java.util.List;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Ignore;
+import org.junit.Test;
 
-/**
- *
- * @author Atari
+/**@author Viktor and Nour
  */
 public class VillageTest
 {   public VillageTest() {}
     
 
     /** Test of getLocation method, of class Village.
+     * Checking if it returns the address to the map.
      */
     @Test
-    public void testGetLocation() {
-        System.out.println("getLocation");
+    public void testGetLocation() 
+    {   System.out.println("getLocation");
         Village instance = new Village();
         
         String expResult = "Graphix/village.tmx";
         String result = instance.getLocation();
         assertEquals(expResult, result);
-        
     }
 
     
-    /**
-     * Test of getBoxes method, of class Village.
+    /** Test of getBoxes method, of class Village.
+     * Testing if it returns the number of boxes for the level.
      */
     @Test
-    public void testGetBoxes() {
-        System.out.println("getBoxes");
+    public void testGetBoxes() 
+    {   System.out.println("getBoxes");
         Village instance = new Village();
         int expResult = 2;
         int result = instance.getBoxes();
         assertEquals(expResult, result);
-        
-    }
+     }
 
     /**
      * Test of getobjects method, of class Village.
+     * Unimplemented method.
      */
     @Test
     @Ignore

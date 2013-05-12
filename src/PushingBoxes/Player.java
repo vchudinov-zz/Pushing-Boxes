@@ -26,7 +26,7 @@ public class Player
      * @see model
      * @version 3.
      */
-    void energyLevel(boolean game)
+    protected void energyLevel(boolean game)
     {   energy = energy - 5;        
     
         if (energy <=0)     /*The player loses a life and 
@@ -53,7 +53,7 @@ public class Player
      * 
      * @version 4
      * */
-    void move(Direction direction, int gutter, int pxToMove)
+    protected void move(Direction direction, int gutter, int pxToMove)
     {   switch(direction)
         {   case up:
             {   if (y > gutter)

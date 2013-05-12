@@ -12,6 +12,7 @@ public class CastleTest
     }
     
     /**Test of getLocation method, of class Castle.
+     * Tests if the method returns the address of the level map.
      */
     @Test
     public void testGetLocation()
@@ -23,6 +24,7 @@ public class CastleTest
     }
 
     /** Test of getBoxes method, of class Castle.
+     * Tests if the method returns the number of boxes.
      */
     @Test
     public void testGetBoxes() 
@@ -34,7 +36,7 @@ public class CastleTest
     }
 
     /**Test of getobjects method, of class Castle.
-     * Fails because of a method that is not implemented.
+     * Ignored, because it is unimplemented method.
      */
     @Test
     @Ignore
@@ -44,7 +46,5 @@ public class CastleTest
         List expResult = null;
         List result = instance.getobjects();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 }

@@ -45,16 +45,16 @@ public class Levels
      * @see Model
      * @version 2
      */
-    void levels(Model model) throws SlickException
-    {   int boxesHome = 0;  //The number of the immobileboxes
+    protected void levels(Model model) throws SlickException
+    {   int boxesHome = 0;  //The number of the immobile boxes.
         for (int i = 0; i < model.moveable.length; i++)
         {   if (!model.moveable[i]) 
             {   boxesHome++;
             }
         }
-            if (boxesHome == model.numberOfBoxes) //Statement that changes the level
+            if (boxesHome == model.numberOfBoxes) //Statement that changes the level.
             {   currState +=1;
-                if (currState < gameLocations.size()) 
+                if ( currState < gameLocations.size()) 
                 {   model.setBoxes(gameLocations.get(currState).getBoxes()); //Prepares the number of boxes for the next level
                     map();  //changes the map
                 }
@@ -62,7 +62,6 @@ public class Levels
                 {   currState = 0;
                     model.game = false;
                 }
-               
             }
         }
        
@@ -72,7 +71,7 @@ public class Levels
       * @throws SlickException 
       * @version 1
       */
-     void map() throws SlickException
+     protected void map() throws SlickException
      {   Visuals.map = new TiledMap(gameLocations.get(currState).getLocation());
      }
  }

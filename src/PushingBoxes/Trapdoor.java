@@ -26,7 +26,7 @@ public class Trapdoor {
     /** Checks the position of boxes in relation to the door.
      * Iterates trough all the boxes on the field and checks their position.
      * If they are on the same tile as the door they become un-movable and disappear.
-     *      * 
+     *      
      * @param model - Takes a model, because our Model class has all the necessary variables inside it.
      * 
      * @see Model
@@ -35,8 +35,8 @@ public class Trapdoor {
      * 
      * @version 6
      */
-    void check(Model model)
-    {   for (int i = 0; i < model.boxes.length; i++) /*Iterate trough the boxes 
+   protected void check(Model model)
+   {   for (int i = 0; i < model.boxes.length; i++) /*Iterate trough the boxes 
                                                      * and checks if they ar einside the door, */
         {   if (model.boxes[i].xpos <= Controller.fieldSize/2 && 
                 model.boxes[i].xpos >= Controller.fieldSize/2 && 
@@ -48,7 +48,7 @@ public class Trapdoor {
                 model.moveable[i] = false;
             }
        } 
-    }
+   }
 }
     
 

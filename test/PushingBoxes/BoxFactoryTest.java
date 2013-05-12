@@ -5,10 +5,9 @@ import org.junit.Test;
 
 /** @author Viktor and Nour
  */
-public class BoxFactoryTest {
+public class BoxFactoryTest
+{   public BoxFactoryTest() {}
     
-    public BoxFactoryTest() {
-    }
     /** Test of generator method, of class BoxFactory.
      * Tests if it creates a list full of levels.
      */
@@ -35,7 +34,5 @@ public class BoxFactoryTest {
         {   System.out.println(expResult[i] + " " +  result[i]);
             assertTrue(result[i]);
         }
-        
-        
     }
 }

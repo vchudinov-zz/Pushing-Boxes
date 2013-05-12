@@ -35,5 +35,5 @@ public interface Localizable
      * 
      * @version 5 
      */
-    void move(Direction direction, Model model);
+     public void move(Direction direction, Model model);
 }

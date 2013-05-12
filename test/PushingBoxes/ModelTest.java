@@ -1,19 +1,14 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package PushingBoxes;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Ignore;
+import org.junit.Test;
 import org.newdawn.slick.Input;
 
 /** @author Viktor and Nour
  */
 public class ModelTest
-{   public ModelTest() {
-    }
+{   public ModelTest() { }
     
    /** Test of setBoxes method, of class Model.
     * Tests if the method successfully creates an array of boxes.
@@ -21,20 +16,20 @@ public class ModelTest
     @Test
     public void testSetBoxes() throws Exception {
         System.out.println("setBoxes");
-        int counter = 2;
+        int counter = 2;                                //A counter of boxes. To get tings running.
         Model instance = new Model();
-        instance.setBoxes(counter);
-        assertEquals(instance.boxes.length, counter);
-        for (int i = 0; i < counter; i++) 
+        instance.setBoxes(counter);                     //Setting the boxes.
+        assertEquals(instance.boxes.length, counter);   //Testing if the array is populated.
+        for (int i = 0; i < counter; i++)               //Testing to see if it really has objects.
             {   assertNotNull(instance.boxes[i]);
             }
         
-        assertEquals(instance.moveable.length, counter);
+        assertEquals(instance.moveable.length, counter);//Checking the same for the moveable array.
         for (int i = 0; i < counter; i++)
             {   assertNotNull(instance.moveable[i]);
             }
         
-        assertEquals(instance.drawable.length, counter);
+        assertEquals(instance.drawable.length, counter);//And for the drawable array.
         for (int i = 0; i < counter; i++)
             {   assertNotNull(instance.drawable[i]);
             }
@@ -49,26 +44,31 @@ public class ModelTest
     {   System.out.println("start");
         
         Model instance = new Model();
-        int lgutter = 5*instance.size;
+        int lgutter = 5*instance.size; //Sample gutters and sizes.
         int rgutter = 10*instance.size;
         int bgutter = 10*instance.size;
         int tgutter = 5*instance.size;
         int pxToMove = 3;
         instance.start(5*instance.size, 10*instance.size, 10*instance.size, 5*instance.size, 3);
-        assertEquals(instance.tgutter, tgutter);
+        assertEquals(instance.tgutter, tgutter);    //checking if they are implemented.
         assertEquals(instance.bgutter, bgutter);
         assertEquals(instance.lgutter, lgutter);
         assertEquals(instance.rgutter, rgutter);
         assertEquals(instance.pxToMove, pxToMove);
         
-        assertNotNull(instance.player);
+        assertNotNull(instance.player);             //Checking if the player and door are created.
         assertNotNull(instance.door);
     }
 
     /**Test of move method, of class Model.
-     * Ignoring this test because it requires active input, which we cannot simulte.
+     * Ignoring this test because it requires a parameter 
+     * from class Input from the SLick2d Library and we cannot simulate it. 
      * We test this by actually running the game and seeing if it works.
-     * The move method of the Player is tested in the Player test
+     * The move method of the Player is tested in the Player test and works fine.
+     * The move method of the boxes is tested in the PushBox test and also works fine.
+     * This method only calls them.
+     * @see Player
+     * @see PushBox
      */
     
     @Test

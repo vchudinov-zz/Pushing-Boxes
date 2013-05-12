@@ -1,7 +1,6 @@
 package PushingBoxes;
 
-/** Game object.
- * Includes all the objects that are not boxes or Players.
+/** Game object includes all the objects that are not boxes or Players.
  * So far we haven't got any implemented. 
  * Game objects are items that have some effect on the player - like hurting him,
  * or increasing his lives and energy.

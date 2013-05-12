@@ -21,7 +21,7 @@ public class VisualInitializer
      * @param height - the height of the frame
      * @version 2
      */
-    static void newFrame(int width, int height)
+    protected static void newFrame(int width, int height)
     {   AppGameContainer app;
         
         try
@@ -39,5 +39,4 @@ public class VisualInitializer
          { Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
          }
     }
-    
 }
