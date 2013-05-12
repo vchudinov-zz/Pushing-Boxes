@@ -1,21 +1,17 @@
-/** This one of the levels
- * @version x.0
- * Still needs the address to the map
- */
 package PushingBoxes;
 
 import java.util.List;
 
-/**
- *
- * @author Atari
+/** This the castle level.
+ * The description of the methods is in Location.
+ * @see Location
+ * @version 2
+ * @author Viktor and Nour
  */
 public class Castle implements Location 
-{   static String castle ="Graphix/castle.tmx";
-    /**
-     *
-     */
-    public static int numberOfBoxes = 6;
+{   static String castle ="Graphix/castle.tmx"; //The address of the map.
+    /**The number of boxes for this level. */
+    static int numberOfBoxes = 6;
         
     @Override
     public String getLocation() {

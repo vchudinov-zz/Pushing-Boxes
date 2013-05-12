@@ -1,19 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package PushingBoxes;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
+import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
-/**
- *
- * @author Atari
+/** We do not have implemented this class, so this test is meaningless right now.
+ * @author Viktor and Nour
  */
 public class GameObjectTest {
     
@@ -24,20 +16,8 @@ public class GameObjectTest {
     public static void setUpClass() {
     }
     
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of canBeTaken method, of class GameObject.
+    /**Test of canBeTaken method, of class GameObject.
+     * Unimplemented method.
      */
     @Test
     public void testCanBeTaken() {
@@ -46,12 +26,11 @@ public class GameObjectTest {
         boolean expResult = false;
         boolean result = instance.canBeTaken();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
-    /**
-     * Test of canBeMoved method, of class GameObject.
+    /** Test of canBeMoved method, of class GameObject.
+     * Unimplemented method.
      */
     @Test
     public void testCanBeMoved() {
@@ -60,8 +39,7 @@ public class GameObjectTest {
         boolean expResult = false;
         boolean result = instance.canBeMoved();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -74,8 +52,7 @@ public class GameObjectTest {
         int expResult = 0;
         int result = instance.energyeffect();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     public class GameObjectImpl implements GameObject {
@@ -90,6 +67,11 @@ public class GameObjectTest {
 
         public int energyeffect() {
             return 0;
+        }
+
+        @Override
+        public void move(Direction direction, Model model) {
+            throw new UnsupportedOperationException("Not supported yet.");
         }
     }
 }

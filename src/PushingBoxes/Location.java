@@ -1,34 +1,30 @@
-/** Our Locations.
- * Generally each location should have a String with address to its map and a description object
- * @version 3
- * @author Viktor and Nour
- */
 package PushingBoxes;
 
 import java.util.List;
 
-/**
- *
- * @author Atari
+/** The interface that describes the different levels.
+ * Each location contains the address to its map, an integer with the 
+ * numbers of boxes for the level and in the future - a List of other game objects
+ * 
+ * @version 3
+ * @author Viktor and Nour
  */
 public interface Location
-{   
-    
-    /** Return the location of the game map.
-     * @return 
+{    /** Return the location of the game map.
+     * @return location
      * @version 2
      */
     String getLocation();
     
     /** Returns the number of boxes for each location
-     * "version 1
-     * @return 
+     * @return numberOfBoxes - an int corresponding to the number of boxes for the level.
+     * @version 1
      */
     int getBoxes();
     
     /** Returns the game objects on each location. 
      * Not implemented yet
-     * @return 
+     * @return List
      */
     List<GameObject> getobjects();
     

@@ -4,80 +4,80 @@
  */
 package PushingBoxes;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
 import org.newdawn.slick.Input;
 
-/**
- *
- * @author Atari
+/** @author Viktor and Nour
  */
-public class ModelTest {
-    
-    public ModelTest() {
+public class ModelTest
+{   public ModelTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of setBoxes method, of class Model.
-     */
+   /** Test of setBoxes method, of class Model.
+    * Tests if the method successfully creates an array of boxes.
+    */
     @Test
     public void testSetBoxes() throws Exception {
         System.out.println("setBoxes");
-        int counter = 0;
+        int counter = 2;
         Model instance = new Model();
         instance.setBoxes(counter);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.boxes.length, counter);
+        for (int i = 0; i < counter; i++) 
+            {   assertNotNull(instance.boxes[i]);
+            }
+        
+        assertEquals(instance.moveable.length, counter);
+        for (int i = 0; i < counter; i++)
+            {   assertNotNull(instance.moveable[i]);
+            }
+        
+        assertEquals(instance.drawable.length, counter);
+        for (int i = 0; i < counter; i++)
+            {   assertNotNull(instance.drawable[i]);
+            }
     }
 
-    /**
-     * Test of start method, of class Model.
+    /** Test of start method, of class Model.
+     * Tests if the method successfully initializes the variables on gutter,size and movement. 
+     * And if it successfully creates Player and door 
      */
     @Test
-    public void testStart() {
-        System.out.println("start");
-        int lgutter = 0;
-        int rgutter = 0;
-        int bgutter = 0;
-        int tgutter = 0;
-        int pxToMove = 0;
+    public void testStart() 
+    {   System.out.println("start");
+        
         Model instance = new Model();
-        instance.start(lgutter, rgutter, bgutter, tgutter, pxToMove);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int lgutter = 5*instance.size;
+        int rgutter = 10*instance.size;
+        int bgutter = 10*instance.size;
+        int tgutter = 5*instance.size;
+        int pxToMove = 3;
+        instance.start(5*instance.size, 10*instance.size, 10*instance.size, 5*instance.size, 3);
+        assertEquals(instance.tgutter, tgutter);
+        assertEquals(instance.bgutter, bgutter);
+        assertEquals(instance.lgutter, lgutter);
+        assertEquals(instance.rgutter, rgutter);
+        assertEquals(instance.pxToMove, pxToMove);
+        
+        assertNotNull(instance.player);
+        assertNotNull(instance.door);
     }
 
-    /**
-     * Test of move method, of class Model.
+    /**Test of move method, of class Model.
+     * Ignoring this test because it requires active input, which we cannot simulte.
+     * We test this by actually running the game and seeing if it works.
+     * The move method of the Player is tested in the Player test
      */
+    
     @Test
-    public void testMove() {
-        System.out.println("move");
+    @Ignore
+    public void testMove()
+    {   System.out.println("move");
         Input i = null;
         PushBox[] boxes = null;
         Model instance = new Model();
         instance.move(i, boxes);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 }

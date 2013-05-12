@@ -1,90 +1,45 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package PushingBoxes;
 
 import java.util.List;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
+import org.junit.Test;
 
-/**
- *
- * @author Atari
+/**@author Viktor and Nour
  */
-public class CastleTest {
-    
-    public CastleTest() {
+public class CastleTest
+{   public CastleTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of getLocation method, of class Castle.
+    /**Test of getLocation method, of class Castle.
      */
     @Test
-    public void testGetLocation() {
-        System.out.println("getLocation");
+    public void testGetLocation()
+    {   System.out.println("getLocation");
         Castle instance = new Castle();
-        String expResult = "";
+        String expResult = "Graphix/castle.tmx";
         String result = instance.getLocation();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of getID method, of class Castle.
+    /** Test of getBoxes method, of class Castle.
      */
     @Test
-    public void testGetID() {
-        System.out.println("getID");
+    public void testGetBoxes() 
+    {   System.out.println("getBoxes");
         Castle instance = new Castle();
-        int expResult = 0;
-        int result = instance.getID();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getBoxes method, of class Castle.
-     */
-    @Test
-    public void testGetBoxes() {
-        System.out.println("getBoxes");
-        Castle instance = new Castle();
-        int expResult = 0;
+        int expResult = 6;
         int result = instance.getBoxes();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of getobjects method, of class Castle.
+    /**Test of getobjects method, of class Castle.
+     * Fails because of a method that is not implemented.
      */
     @Test
-    public void testGetobjects() {
-        System.out.println("getobjects");
+    @Ignore
+    public void testGetobjects() 
+    {   System.out.println("getobjects");
         Castle instance = new Castle();
         List expResult = null;
         List result = instance.getobjects();

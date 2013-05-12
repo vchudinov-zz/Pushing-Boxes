@@ -1,53 +1,26 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package PushingBoxes;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
+import org.junit.Test;
 import org.newdawn.slick.Input;
 
-/**
- *
- * @author Atari
+/**@author Viktor and Nour
  */
-public class MenuTest {
+public class MenuTest 
+{   public MenuTest() {}
     
-    public MenuTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of checkmMenu method, of class Menu.
+    /** Test of checkmMenu method, of class Menu.
+     * We test this by actually testing it in game. No idea how to do it otherwise.
      */
     @Test
+    @Ignore
     public void testCheckmMenu() {
         System.out.println("checkmMenu");
-        Input input = null;
-        Visuals view = null;
+        Input input = null;       
+        boolean game = false;
         Menu instance = new Menu();
-        instance.checkmMenu(input, view);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        instance.checkmMenu(input, game);
+        assertTrue(game);
     }
 }

@@ -1,25 +1,16 @@
-/** The forest level
- *  Needs address to the map
- *  @version x.0
- */
+
 package PushingBoxes;
 
 import java.util.List;
 
-/**
- *
- * @author Atari
+/** The forest level
+ *  @see Location
+ *  @author VIktor and Nour
+ *  @version 2
  */
 public class Forest implements Location 
-{
-    /**
-     *
-     */
-    public static String forest = "Graphix/forest.tmx";
-    /**
-     *
-     */
-    public static int numberOfBoxes = 4;
+{   static String forest = "Graphix/forest.tmx"; // The address to the map. 
+    static int numberOfBoxes = 4;   // The number of boxes for this level.
     
     @Override
     public String getLocation()

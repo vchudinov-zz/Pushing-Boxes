@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
 
 /**
  *
@@ -17,35 +18,18 @@ import static org.junit.Assert.*;
  */
 public class VisualInitializerTest {
     
-    public VisualInitializerTest() {
-    }
+    public VisualInitializerTest() {}
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of newFrame method, of class VisualInitializer.
+    /** Test of newFrame method, of class VisualInitializer.
+     * 
      */
     @Test
+    @Ignore
     public void testNewFrame() {
         System.out.println("newFrame");
-        int width = 0;
-        int height = 0;
+        int width = 20;
+        int height = 30;
         VisualInitializer.newFrame(width, height);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 }

@@ -1,23 +1,15 @@
-/*Location 1
- */
 package PushingBoxes;
 
 import java.util.List;
 
-/**
- *
- * @author Atari
+/** The village level.
+ * @see Location
+ * @author Viktor and Nour
+ * @version 3
  */
 public class Village implements Location 
-{
-    /**
-     *
-     */
-    public static String village = "Graphix/village.tmx";
-    /**
-     *
-     */
-    public static int numberOfBoxes = 2;
+{   static String village = "Graphix/village.tmx";   //The address to the map.
+    static int numberOfBoxes = 2;                    //THe number of boxes for the level.
         
     @Override
     public String getLocation()
