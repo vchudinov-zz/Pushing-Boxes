@@ -1,0 +1,144 @@
+COURSE LOG
+Viktor & Nour
+
+12/03/2013
+•  We drafted the project Agreement (Appendix 1).
+•	Started working on feature 1. Our concept is unclear. We will probably be working on an adventure type game - either textual or graphical.
+•	We created locations for the game in separate classes, which are printed out in the main method i.e. a demo walk through the locations.
+
+To do:
+o	Research  graphics libraries and how do they work
+o	Try to understand how the enum Directions works.
+o	Set up a Dropbox folder. 
+
+05/04/2013
+•	We got lost and confused on what exactly to do. We agreed that we’ll wait until we have more information.  
+•	We created a Player class but are unsure how to implement movements and such and what we are supposed to do.
+
+To do:
+o	Wait for more information
+o	Research graphics and movement.
+o	Try to understand how the enum Directions works.
+o	Check the TAs code sample for a simpleGame
+o	To Nour:  Remember to put the Log on gitHub/Dropbox
+
+09/04/2012
+•	We made a major overhaul of our idea ,using the code provided by the TA as basis.  We still do not know how to integrate it with the code provided during the lectures, but decided to go with the TA’s template. Things go slowly and painfully. Our options for graphics are either the JFrame or the Slick2d library. 
+
+To do:
+o	Continue working on the new idea. We’ll adapt later when we have more info from lectures.
+o	Try to understand how the enum Directions works.
+o	Work on Graphics
+
+30/04/2013
+•	We missed adding a course log for the last meeting.
+•	So far we have a concept of our game and a working game model. 
+•	We have managed to implement graphics and the Model using Jframe. Some graphics are working on Slick 2d. 
+•	We have tilesets and images for the graphics. 
+•	 Movement and interaction with objects is working.  The ‘skeleton’ of the game is set up. 
+
+To do:
+o	Remember UML model of the project
+o	We have to Implement JUnit tests
+o	We have to find a way to change locations Implement level/location transition
+o	And to have Individual objects  on each level
+o	We have to find an easier way to interact with objects. Currently it’s a bit complicated.
+o	Try to understand how the enum Directions works. At this point it is useless.
+o	Make backgrounds for levels
+
+04/05/2012
+	Things look pretty good. 
+	We have improved method for interacting with boxes.
+	Levels are ready 
+	We have working graphics with the Slick2d library. 
+	We understood the Directions
+
+To do:
+o	Find a way to spawn multiple boxes. 
+o	Make a working door.
+o	Integrate the code from the lectures if possible.
+o	Find a way to change the levels.
+o	Make JUnit tests.
+o	Make UML diagram.
+
+07/05/2012
+•	We started refactoring our code. Turns out it’s a mess.
+•	We started writing the project report
+•	So far we have made the introduction for our project, a user case and a flow chart
+
+To do:
+o	Refactor the code, separating the visuals from the game logic
+o	Make a working door.
+o	Find a way to spawn multiple boxes. 
+o	Find a way to change the levels.
+o	Make JUnit tests.
+o	Make UML diagram.
+
+08/05/2013
+	Door is working.
+	Still working on making the code more readable.
+	Worked on JavaDocs.
+	Worked on report.
+
+To do:
+o	Fix the player not to appear under or over the boxes.
+o	Find a way to change levels.
+o	 Find how to display energy and lives.
+o	Add bonus to energy when a box is pushed through the door.
+o	 Make a GameOver screen and Start game screen.
+o	Finish JavaDocs
+o	Make JUnit tests.
+o	Make UML diagram.
+
+09/05/2013
+	More refactoring and more JavaDocs. 
+	More work on the report
+	Our Factory class is working 
+	We have a working way of implementing and transitioning trough levels. 
+	We display energy and lives.
+To do:	
+o	Fix the player not to appear under or over the boxes
+o	Add bonus to energy when a box is pushed through the door
+o	Make a Game Over and Start game screens.
+o	Finish JavaDocs
+o	Make JUnit tests.
+o	Make UML diagram.
+
+10/05/2013
+	We have a Game Over and Start menu screen,
+	Still improving code. Nearly done
+	Still working on Report and Javadocs
+To do:
+o	Finish JavaDocs
+o	Make JUnit tests.
+o	Make UML diagram.
+o	Finish work on code
+o	Fix the player not to appear under or over the boxes
+
+11/05/2013
+	Code is completed ( sort of. If we have time we will improve)
+	JavaDocs are 50% done
+	Work on the report is going strong.
+
+To do:
+o	Finish JavaDocs
+o	Make JUnit tests.
+o	Make UML diagram.
+o	Fix the player not to appear under or over the boxes
+
+12/05/2013
+ Code is so far finished.
+ Javadocs are finished
+ JUnit tests are complete. 
+
+Unresolved issues for future versions:
+o The player does not receive energy when he pushes a box trough the door
+o The player still has problem with clipping
+o The only implemented objects are boxes. Future version will include objects that help or hurt the player,
+  or just get in the way
+o Boxes are spawned at random coordinates. In future versions they should be fixed
+o The energy needs to be balanced.
+o Add a time-counter so that the player cannot move for a second or two after losing a life
+
+
+
