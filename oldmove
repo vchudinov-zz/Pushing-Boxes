@@ -1,0 +1,27 @@
+public class Player 
+{    private SpriteSheet animation;
+     private Animation character,up,down,left,right; //Correspond to the direction of the character
+     private int size = 32; //size of the tiles
+     public int energy = 100;
+     public float x = 576/2; //initial position of the player
+     public float y = 576/2; //could be replaced with some variable from the MAIN method
+     
+     private int pxToMove = 2;
+          
+    Player() throws SlickException 
+    {   animation = new SpriteSheet("Graphix/character.png", 48, 64, 0);
+        up = new Animation(animation, 0,3, 3,3, true,20, false);
+        down = new Animation(animation, 0,0, 3,0, true,20, false);
+        left = new Animation(animation, 0,1, 3,1, true,20, false);
+        right = new Animation(animation,0,2, 3,2, true,20, false);
+        character = up;
+    }
+    
+    public void move(Input i) 
+    {   if (i.isKeyDown(Input.KEY_UP))
+        {  character = up;
+            if (y > 2 * size)
+            {   character.update(pxToMove);
+                y -= pxToMove;}
+            }
+                
