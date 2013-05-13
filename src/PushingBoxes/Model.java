@@ -83,7 +83,7 @@ public class Model
      */
      protected void move(Input i, PushBox[] boxes) 
      {   if (i.isKeyDown(Input.KEY_UP))
-         {   player.move(Direction.up, tgutter, pxToMove);
+         {   player.move(Direction.up, this);
              
              //Iterate trough the boxes and check ig they can be moved. If yes - move.
              for (int box = 0; box < boxes.length; box++)
@@ -94,7 +94,7 @@ public class Model
          }
             
          else if (i.isKeyDown(Input.KEY_DOWN))
-         {   player.move(Direction.down, bgutter, pxToMove);
+         {   player.move(Direction.down,this);
                 
              for (int box = 0; box < boxes.length; box++) 
              {   if (moveable[box])
@@ -104,7 +104,7 @@ public class Model
          }
         
          else if (i.isKeyDown(Input.KEY_LEFT))
-         {   player.move(Direction.left, lgutter, pxToMove);
+         {   player.move(Direction.left, this);
                 
              for (int box = 0; box < boxes.length; box++)
              {   if (moveable[box])
@@ -114,7 +114,7 @@ public class Model
          }
         
          else if (i.isKeyDown(Input.KEY_RIGHT))
-         {  player.move(Direction.right, rgutter, pxToMove);
+         {  player.move(Direction.right, this);
        
              for (int box = 0; box < boxes.length; box++)
              {   if (moveable[box]) 
