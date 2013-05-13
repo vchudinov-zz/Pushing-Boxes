@@ -53,31 +53,31 @@ public class Player
      * 
      * @version 4
      * */
-    protected void move(Direction direction, int gutter, int pxToMove)
+    protected void move(Direction direction, Model model)
     {   switch(direction)
         {   case up:
-            {   if (y > gutter)
-                {   y = y - pxToMove;
+            {   if (y > model.tutter)
+                {   y = y - model.pxToMove;
                 }
                 break;
             }
             
             case down:
-            {   if (y < gutter)
-                { y = y + pxToMove;}
+            {   if (y < model.bgutter)
+                { y = y + model.pxToMove;}
                 break;
             }
               
             case left:
-            {   if (x > gutter)
-                {   x = x - pxToMove;
+            {   if (x > model.lgutter)
+                {   x = x - model.pxToMove;
                 }
                 break;
             }
                 
             case right:
-            {   if (x < gutter)
-                {   x = x + pxToMove;
+            {   if (x < model.rgutter)
+                {   x = x + model.pxToMove;
                 }
                 break;
           }
