@@ -8,8 +8,8 @@ package PushingBoxes;
  * @version 2
  * @author Viktor and Nour
  */
-public class Trapdoor {
-    int x,
+public class Trapdoor
+{   int x,
         y; //The x and y coordinates
     
     /** Class constructor.
