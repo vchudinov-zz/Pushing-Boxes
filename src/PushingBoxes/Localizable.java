@@ -16,9 +16,6 @@ public interface Localizable
     enum Direction { right,up,left,down};
     
     /** Deals with the movement of objects.
-     * In this version the only movable objects are the PushBoxes. 
-     * In order to move they check their location in relation to the player, 
-     * to detect if he is 'pushing' them
      * 
      * @param direction - the direction of movement
      * @param model - model has all the necessary things for movement - the player, the gutter and the steps.
