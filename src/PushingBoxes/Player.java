@@ -1,10 +1,7 @@
 package PushingBoxes;
 
-import PushingBoxes.Localizable.Direction;
-
 /** This is the class that is responsible for characters. 
  *  It contains methods on their movement and energy.
- *  Re-added the text-based move method to make the Model class lighter.
  *  
  * @see Model
  * @see PushBox
@@ -13,7 +10,7 @@ import PushingBoxes.Localizable.Direction;
  * @author Victor and Nour
  **/
 
-public class Player
+public class Player implements Localizable
 {   int energy = 1000;                  //Initial energy of the player.
     int lives = 3;                      //the number of lives.
     int x = Controller.fieldSize/2;     //The starting position of the player on the x coordinate.
@@ -47,8 +44,7 @@ public class Player
      * inside he can move
      * 
      * @param direction - the direction in which to move.
-     * @param gutter - the respective edge of the field
-     * @param pxToMove  -the size of the 'step'
+     * @param model - contains all the necessary things for movement like board gutters
      * @see model
      * 
      * @version 4
