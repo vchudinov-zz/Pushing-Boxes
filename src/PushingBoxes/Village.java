@@ -22,7 +22,7 @@ public class Village implements Location
     }
 
     @Override
-    public List<GameObject> getobjects() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public List<GameObject> getobjects()
+    {   throw new UnsupportedOperationException("Not supported yet.");
     }
 }
