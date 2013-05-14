@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="24" height="24" tilewidth="32" tileheight="32">
- <tileset firstgid="1" name="Inq XP MT- Medieval Town" tilewidth="32" tileheight="32">
-  <image source="exterior/Inq XP MT- Medieval Town.png" trans="ffffff" width="256" height="16704"/>
+ <tileset firstgid="1" name="castle" tilewidth="32" tileheight="32">
+  <image source="exterior/castle.png" trans="ffffff" width="256" height="16704"/>
  </tileset>
  <tileset firstgid="4177" name="Inq XP MT - Road" tilewidth="32" tileheight="32">
   <image source="exterior/Inq XP MT - Road.png" trans="ffffff" width="96" height="128"/>
