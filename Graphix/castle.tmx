@@ -1,24 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="24" height="24" tilewidth="32" tileheight="32">
- <tileset firstgid="1" name="castle" tilewidth="32" tileheight="32">
-  <image source="exterior/castle.png" trans="ffffff" width="256" height="16704"/>
- </tileset>
- <tileset firstgid="4177" name="Inq XP MT - Road" tilewidth="32" tileheight="32">
-  <image source="exterior/Inq XP MT - Road.png" trans="ffffff" width="96" height="128"/>
- </tileset>
- <layer name="Tile Layer 1" width="24" height="24">
-  <data encoding="base64" compression="zlib">
-   eJxjZGBgYITiW0DiNhA3AnETEDczIsQYyVAXLIDKfwQkHgNxJxB3AXE3I0KMHHXo5sPcMBGIJwHxZALuJ6QOl/tnAvEsIJ5NwP2E1KGbP9TxSiCxigK8mhG/+RuBBCsD+XjzqPmj5o+aP2Dm76TQ/N0jIHx2UYAJhc9A4ggBBKaF+dECCEyKPgBoL1ww
-  </data>
- </layer>
- <layer name="Tile Layer 2" width="24" height="24">
-  <data encoding="base64" compression="zlib">
-   eJwzZGRg2ALEWkCMD6wDyq8H4g0E1GkimRfNCOHvAWIjAvq2AeW3A/EOAuoMkcwDmW9IpPv3AeX3A/EBIty/B2peMgnuPwaUPw7EJ4hw/xaoeSDzLYH4CBBbEdBHLACZt4aRwcEKaj4yMBFgYDAVoI49IIBuPrXBqPmj5o+aP7TMV0MqX2hhvh6NzHcFmuUGxGY0dj8yAJlvwcjQYA7EhNSuBKpdBcWEgDnEXJj5B4D8A4T0bASq3QTFhADMzGwah89kGps/G2g+AEDhKYk=
-  </data>
- </layer>
- <layer name="Tile Layer 3" width="24" height="24">
-  <data encoding="base64" compression="zlib">
-   eJxjYGBgkGFiAANFAQaqAJh5MCDChF0duQDdPHT70AEx/hIEqhESwDQvkhG/Pi0sdmsKYIpLAsWksLiDkPlGOPyGSxwdJBIw3wqHObjESTWfUjBq/qj5o+aPmj+Q5jcg2WGEoy4JBKoJAuJgItxTj2QmyPwOIvSA1CUBcTIRatuRzOwH0hOgbsOHM4E4C4iziVALMxMENIG0FhCfAuLTUBqZfRqKVYH1iRoQqzPhVgtjw8wEAUMgbQTEl4D4MpRGZl+GYl2guXpArM+EWy2MDTMTBAAfqDR/
-  </data>
- </layer>
+<tileset firstgid="1" name="castle" tilewidth="32" tileheight="32">
+<image source="exterior/castle.png" trans="ffffff" width="256" height="16704"/>
+</tileset>
+<tileset firstgid="4177" name="Inq XP MT - Road" tilewidth="32" tileheight="32">
+<image source="exterior/Inq XP MT - Road.png" trans="ffffff" width="96" height="128"/>
+</tileset>
+<layer name="Tile Layer 1" width="24" height="24">
+<data encoding="base64" compression="zlib">
+eJxjZGBgYITiW0DiNhA3AnETEDczIsQYyVAXLIDKfwQkHgNxJxB3AXE3I0KMHHXo5sPcMBGIJwHxZALuJ6QOl/tnAvEsIJ5NwP2E1KGbP9TxSiCxigK8mhG/+RuBBCsD+XjzqPmj5o+aP2Dm76TQ/N0jIHx2UYAJhc9A4ggBBKaF+dECCEyKPgBoL1ww
+</data>
+</layer>
+<layer name="Tile Layer 2" width="24" height="24">
+<data encoding="base64" compression="zlib">
+eJwzZGRg2ALEWkCMD6wDyq8H4g0E1GkimRfNCOHvAWIjAvq2AeW3A/EOAuoMkcwDmW9IpPv3AeX3A/EBIty/B2peMgnuPwaUPw7EJ4hw/xaoeSDzLYH4CBBbEdBHLACZt4aRwcEKaj4yMBFgYDAVoI49IIBuPrXBqPmj5o+aP7TMV0MqX2hhvh6NzHcFmuUGxGY0dj8yAJlvwcjQYA7EhNSuBKpdBcWEgDnEXJj5B4D8A4T0bASq3QTFhADMzGwah89kGps/G2g+AEDhKYk=
+</data>
+</layer>
+<layer name="Tile Layer 3" width="24" height="24">
+<data encoding="base64" compression="zlib">
+eJxjYGBgkGFiAANFAQaqAJh5MCDChF0duQDdPHT70AEx/hIEqhESwDQvkhG/Pi0sdmsKYIpLAsWksLiDkPlGOPyGSxwdJBIw3wqHObjESTWfUjBq/qj5o+aPmj+Q5jcg2WGEoy4JBKoJAuJgItxTj2QmyPwOIvSA1CUBcTIRatuRzOwH0hOgbsOHM4E4C4iziVALMxMENIG0FhCfAuLTUBqZfRqKVYH1iRoQqzPhVgtjw8wEAUMgbQTEl4D4MpRGZl+GYl2guXpArM+EWy2MDTMTBAAfqDR/
+</data>
+</layer>
 </map>
